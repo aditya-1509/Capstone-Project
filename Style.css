@@ -92,9 +92,6 @@ nav .nav-links a {
     .ham {
         display: block;
     }
-    .nav-items a {
-        color: white !important;
-    }
 }
 @media (max-width: 1239px) {
     .header h1 {
