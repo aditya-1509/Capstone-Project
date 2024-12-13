@@ -57,6 +57,34 @@ nav .nav-links a {
 }
 
 
+
+.frames {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    margin-top: 50px;
+  }
+  .frames img {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .frames p {
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    font-size: 17px;
+  }
+  
+  .frames p:nth-child(3) {
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+
 @media (max-width: 768px) {
     .nav-items {
         display: none;
@@ -72,8 +100,25 @@ nav .nav-links a {
     .header h1 {
       font-size: 80px;
     }
+    .image9 {
+        display: none;
+      }
   }
 
+
+  @media (max-width: 440px) {
+    .frames {
+      width: 85%;
+    }
+    .images {
+      width: 85%;
+    }
+    .frames img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
 
 @media (max-width: 889px) {
     .header h1 {
