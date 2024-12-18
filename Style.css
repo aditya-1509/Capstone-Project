@@ -85,6 +85,72 @@ nav .nav-links a {
     font-size: 13px;
   }
 
+
+.about {
+  padding: 156px 10px;
+  text-align: center;
+  text-wrap: wrap;
+}
+.about div {
+  display: flex;
+  justify-content: center;
+}
+.about div h2 {
+  width: 75%;
+  text-align: center;
+  font-size: 45px;
+}
+
+.featured {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+}
+.mt-4 {
+  margin-top: 30px;
+}
+.mb-10 {
+  margin-bottom: 50px;
+}
+.featured h1 {
+  font-size: 68px;
+}
+.featured p {
+  font-size: 24px;
+}
+
+.featured button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: rgba(173, 124, 0, 1);
+  color: white;
+  cursor: pointer;
+}
+.featured img {
+  width: 100%;
+  height: auto;
+}
+.quote {
+  padding: 156px 10px;
+  text-align: center;
+  text-wrap: wrap;
+}
+.quote div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quote div p {
+  width: 40%;
+  text-align: left;
+  font-size: 24px;
+}
+
+
 @media (max-width: 768px) {
     .nav-items {
         display: none;
@@ -101,8 +167,27 @@ nav .nav-links a {
         display: none;
       }
   }
+  @media (max-width: 515px) {
+    .header h1 {
+      font-size: 42px;
+    }
+  
+    .about div h2 {
+      font-size: 20px;
+    }
+  }
 
-
+  @media (max-width:950px) {
+    .featured h1{
+        font-size: 40px;
+    }
+    .featured h1, .featured p{
+        padding: 20px;
+    }
+    .quote div p{
+        width: 100%;
+    }
+}
   @media (max-width: 440px) {
     .frames {
       width: 85%;
